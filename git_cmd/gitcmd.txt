@@ -1,0 +1,50 @@
+#创建版本库
+
+mkdir dir_name
+cd dir_name
+git init
+
+#添加文件到该版本库
+
+vim file1...
+git add file1
+git commit -m "something about editing..."
+
+#查看当前库的状态
+
+git status
+
+#查看未提交的改动片段
+
+git diff file1
+
+#查看提交日志
+
+git log
+git log --pretty=oneline
+
+#版本回退
+
+HEAD\HEAD^\HEAD^^...\HEAD~num
+git reset --hard (HEAD^)
+git reset --hard commit_id
+
+#命令记录
+
+git reflog
+
+#相关概念：working directory,stage(index),master(HEAD指针)
+#撤销工作区的修改，还原被删除的文件（一键还原：只能回到最新的版本）
+
+git checkout -- file
+
+#撤销暂存区的修改
+
+git reset HEAD file
+
+#删除版本库中的文件
+
+git rm file
+git commit -m "rm file..."
+
+
