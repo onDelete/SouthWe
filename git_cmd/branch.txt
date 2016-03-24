@@ -32,7 +32,7 @@ git merge --no-ff -m "commit" <name>
 
 #master分支应该保持稳定，仅仅用来开发新版本，而应该另开一个分支用来团队合作，将个人的开发都合并到另一个分支上，然后最终依据需要合到master分支上
 
-#储存当前工作现场
+#储存当前工作现场（使用此命令可以保存当前工作然后跳转到另一个分支进行其他工作）
 
 git stash
 
@@ -44,3 +44,24 @@ git stash list
 
 git stash apply & git stash drop
 git stash pop
+
+#强行删除没有被合并的分支
+
+git branch -D <name>
+
+#查看远程库信息
+
+git remote (-v)
+
+#需要推送的是master分支和开发分支dev，视心情而定
+#多人协作模式
+
+a.git push origin branch-name
+b.if failed:
+	git pull
+  if 冲突:
+	解决冲突
+  else:
+	a
+c.if info "no tracking":
+	git branch --set-upstream branch-name origin/branch-name
