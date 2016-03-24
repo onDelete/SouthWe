@@ -32,4 +32,15 @@ git merge --no-ff -m "commit" <name>
 
 #master分支应该保持稳定，仅仅用来开发新版本，而应该另开一个分支用来团队合作，将个人的开发都合并到另一个分支上，然后最终依据需要合到master分支上
 
+#储存当前工作现场
 
+git stash
+
+#查看已储存的工作现场
+
+git stash list
+
+#回复工作现场
+
+git stash apply & git stash drop
+git stash pop
