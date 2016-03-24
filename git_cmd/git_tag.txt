@@ -1,0 +1,30 @@
+#新建一个标签（默认为HEAD，也可以指定为一个commit id）
+
+git tag <name>
+
+#指定标签信息
+
+git tag -s <tagname> -m "..."
+
+#可以用PGP签名标签
+
+git tag -s <tagname> -m "..."
+
+#查看标签
+
+git tag
+
+#删除一个标签
+
+git tag -d <tagname>
+git push origin :ref/tags/<tagname>
+
+#推送标签到远程
+
+git push origin <tagname>
+
+#一次性推送全部尚未推送的本地标签
+
+git push origin --tags
+
+
