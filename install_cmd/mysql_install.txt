@@ -1,0 +1,5 @@
+安装mysql的依赖关系
+
+mysql-common
+mysql-community-client
+
