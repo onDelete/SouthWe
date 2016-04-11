@@ -1,0 +1,11 @@
+***
+	将ubuntu主文件夹里的中文文件夹名改成英文
+***
+
+>修改主文件夹下各文件夹名称：
+>Desktop Documents Download Music Pictures Public Templates Videos 
+
+>vim .config/user-dirs.dirs
+>修改文件夹指向
+>XDG_DESKTOP_DIR="$HOME/Desktop"
+>...
