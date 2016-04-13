@@ -1,0 +1,14 @@
+***
+	配置lamp环境
+***
+
+#php
+>sudo apt-get install php7.0-cli
+
+#apache2
+>sudo apt-get install apache2
+
+#服务重启
+>sudo /etc/init.d/mysql restart
+>sudo /etc.init.d/apache2 restart
+>sudo service apache2 restart
