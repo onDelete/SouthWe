@@ -3,7 +3,9 @@
 ***
 
 #php
->sudo apt-get install php7.0-cli
+>sudo apt-get install libapache2-mod-php7.0 php7.0-cli
+>sudo apt-get install php7.0-fpm
+>
 
 #apache2
 >sudo apt-get install apache2
@@ -12,3 +14,13 @@
 >sudo /etc/init.d/mysql restart
 >sudo /etc.init.d/apache2 restart
 >sudo service apache2 restart
+
+#mysql 注意配置mysql的用户名和密码
+>sudo ap-get install mysql-server-5.7 mysql-client-5.7
+
+#测试php安装情况
+>sudo vim /var/www/html/Hello.php
+...<?php phpinfo();?>
+
+#在浏览器中访问/localhost/Hello.php
+#在安装的过程中要注意安装php相关的包
