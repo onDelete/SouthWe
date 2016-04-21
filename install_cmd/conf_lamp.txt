@@ -18,6 +18,9 @@
 #mysql 注意配置mysql的用户名和密码
 >sudo ap-get install mysql-server-5.7 mysql-client-5.7
 
+#修改权限以便可以使worpress对计算机进行操作
+>sudo chomod 777 /var/www/
+> sudo chown -R www-data:www-data ahuang/
 #测试php安装情况
 >sudo vim /var/www/html/Hello.php
 ...<?php phpinfo();?>
